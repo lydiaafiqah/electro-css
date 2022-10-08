@@ -209,55 +209,56 @@ body {
 }
 
 .circle-container {
-    position: absolute;
-    left: -20%;
+  position: absolute;
+  left: 25%;
 }
 
 .circle {
-    border-radius: 50%;
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: inset 0 0 10px #ff65bd, 0 0 15px #ff65bd;
 }
 
 .circle:first-child {
-    width: 750px;
-    height: 750px;
-    border: 3px solid #376aa6;
-    animation: morph 40s ease-in-out infinite;
+  width: 750px;
+  height: 750px;
+  border: 3px solid #ff2483;
+  animation: morph 40s ease-in-out infinite;
 }
 
 .circle:nth-child(2) {
-    width: 700px;
-    height: 700px;
-    border: 1px solid #376aa6;
-    animation: morph 50s ease-in-out infinite;
+  width: 700px;
+  height: 700px;
+  border: 1px solid #ff2483;
+  animation: morph 50s ease-in-out infinite;
 }
 
 .circle:nth-child(3) {
-    width: 650px;
-    height: 650px;
-    border: 4px solid #376aa6;
-    animation: morph 30s ease-in-out infinite;
+  width: 650px;
+  height: 650px;
+  border: 4px solid #ff2483;
+  animation: morph 30s ease-in-out infinite;
 }
 
 @keyframes rotate {
-    from { transform: rotate(-360deg); }
-    to { transform: rotate(360deg); }
+  from { transform: rotate(-360deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes morph {
-    0% {
-        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-    } 
-    
-    50% {
-        border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-    
-    100% {
-        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-    } 
+  0% {
+    border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  } 
+  
+  50% {
+    border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  
+  100% {
+    border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  } 
 
-    from { transform: rotate(-360deg); }
-    to { transform: rotate(360deg); }
+  from { transform: rotate(-360deg); }
+  to { transform: rotate(360deg); }
 }

@@ -1,15 +1,21 @@
 import './assets/css/App.css'
+import AUDIO from './assets/audio/electricity.wav'
 
 function App() {
   return (
-    <div class='sign'>
-      <span class='fast-flicker'>b</span>rea<span class='flicker'>t</span>he
-        <div className='circle-container'>
-					<div className='circle'></div>
-					<div className='circle'></div>
-					<div className='circle'></div>
-				</div>
-    </div>
+    <>
+      {/* circle */}
+      <div className='circle-container'>
+        <div className='circle'></div>
+        <div className='circle'></div>
+        <div className='circle'></div>
+      </div>
+
+      {/* neon text */}
+      <div className='sign'>
+        <span className='fast-flicker'>E</span>lec<span className='flicker'>t</span>ro
+      </div>
+    </>
   )
 }
 
